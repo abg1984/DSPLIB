@@ -13,36 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Headerdateien\PatternInterfaces">
+      <UniqueIdentifier>{3e7fc6de-bbcb-4f6d-8bf2-265ade7ea0fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Processors">
+      <UniqueIdentifier>{69ff02d2-cbf4-4b09-8775-cf3d308367aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Miscellaneous">
+      <UniqueIdentifier>{62dc9840-6d7b-4ceb-be6d-55d1c2ca23c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Container">
+      <UniqueIdentifier>{5b5b73b0-16bd-4b2f-900d-da14bf286b75}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\DSPLIB_\DigitalFilter.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DSPLIB_\DigitalFilterCoefficients.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DSPLIB_\DigitalFilterStructure.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DSPLIB_\DirectForm.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DSPLIB_\main.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
+    <ClInclude Include="Observer.h">
+      <Filter>Headerdateien\PatternInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Headerdateien\PatternInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="FIRDirectForm.h">
+      <Filter>Headerdateien\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="FIROverlapAdd.h">
+      <Filter>Headerdateien\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="IIRCanonical.h">
+      <Filter>Headerdateien\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="IIRCoefficients.h">
+      <Filter>Headerdateien\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="DSPUtility.h">
+      <Filter>Headerdateien\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBuffer.h">
+      <Filter>Headerdateien\Container</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\DSPLIB_\DigitalFilter.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DSPLIB_\DigitalFilterCoefficients.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DSPLIB_\DigitalFilterStructure.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DSPLIB_\DirectForm.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
+    <ClCompile Include="main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

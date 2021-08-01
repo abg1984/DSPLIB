@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataBuffer.h" />
+    <ClInclude Include="FIRDirectForm.h" />
+    <ClInclude Include="DSPUtility.h" />
+    <ClInclude Include="IIRCanonical.h" />
+    <ClInclude Include="IIRCoefficients.h" />
+    <ClInclude Include="FIROverlapAdd.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Subject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -112,10 +125,11 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,19 +152,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\DSPLIB_\DigitalFilter.cpp" />
-    <ClCompile Include="..\DSPLIB_\DigitalFilterCoefficients.cpp" />
-    <ClCompile Include="..\DSPLIB_\DigitalFilterStructure.cpp" />
-    <ClCompile Include="..\DSPLIB_\DirectForm.cpp" />
-    <ClCompile Include="..\DSPLIB_\main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\DSPLIB_\DigitalFilter.h" />
-    <ClInclude Include="..\DSPLIB_\DigitalFilterCoefficients.h" />
-    <ClInclude Include="..\DSPLIB_\DigitalFilterStructure.h" />
-    <ClInclude Include="..\DSPLIB_\DirectForm.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
